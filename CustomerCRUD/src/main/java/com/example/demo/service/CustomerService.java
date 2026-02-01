@@ -22,7 +22,8 @@ public interface CustomerService {
 	
 	List<Customer> findByName(String name);
 	
-	Customer findByAddress(String address);
+	Customer findByAddress(String address);//
+	
 	
 	
 	

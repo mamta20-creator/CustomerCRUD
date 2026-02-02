@@ -25,7 +25,11 @@ public class CustomerController {
 	
 	@Autowired
 	private CustomerService cs;
-	
+	@GetMapping("/")
+	public String getMethodName() {
+		return "I am Mamta";
+	}
+	//
 	@PostMapping("add")
 	public void add(@RequestBody Customer c) {
 		

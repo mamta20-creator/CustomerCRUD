@@ -153,7 +153,7 @@ public class CustomerServiceImpl implements CustomerService {
 	}
 
 	@Override
-	public Customer findByAddress(String address) {
+	public List<Customer> findByAddress(String address) {
 		// TODO Auto-generated method stub
 		return cr.findByAddress(address);
 	}

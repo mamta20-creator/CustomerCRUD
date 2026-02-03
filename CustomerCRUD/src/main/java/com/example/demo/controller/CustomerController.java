@@ -100,7 +100,7 @@ public class CustomerController {
     public ResponseEntity<?> searchAddress(@PathVariable String address) {
 		
 		
-		Customer temp=cs.findByAddress(address);
+		List<Customer> temp=cs.findByAddress(address);
 		if(temp==null) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body("NOT FOUND!!");
 			

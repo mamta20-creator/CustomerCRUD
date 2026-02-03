@@ -29,7 +29,7 @@ public class CustomerController {
 	private CustomerService cs;
 	@GetMapping("/")
 	public String getMethodName() {
-		return "I am Mamta";
+		return "This is SpringBoot Application";
 	}
 	//
 	@PostMapping("add")

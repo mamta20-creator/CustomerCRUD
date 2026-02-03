@@ -33,10 +33,12 @@ public class CustomerController {
 	}
 	//
 	@PostMapping("/add")
-	public void add(@RequestBody Customer c) {
+	public ResponseEntity<String> add(@RequestBody Customer c) {
 		
 		cs.add(c);
-		//return new ResponseEntity("Customer added successfully", HttpStatus.CREATED);
+		return ResponseEntity .status(HttpStatus.CREATED)
+				.body("Customer added successfully");
+		
 	}
 	
 	@PostMapping("add all")

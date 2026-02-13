@@ -32,7 +32,7 @@ public class CustomerController {
 		return "This is SpringBoot Application";
 	}
 	//
-	@PostMapping("/add")
+	@PostMapping(value="/add", consumes="application/json")
 	public ResponseEntity<String> add(@RequestBody Customer c) {
 		
 		cs.add(c);
